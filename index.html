@@ -18,23 +18,6 @@
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--JS Charts-->
-    <script type="text/javascript" src="js/jscharts.js"></script>
-    <div id="chartcontainer">This is just a replacement in case Javascript is not available or used for SEO purposes</div>
-    <script type="text/javascript">
-	var myChart = new JSChart('chartcontainer', 'bar');
-	myChart.setDataXML('data.xml');
-	myChart.draw();
-</script>
-<?xml version="1.0"?>
-<JSChart>
-	<dataset type="line">
-		<data unit="10" value="20"/>
-		<data unit="15" value="10"/>
-		<data unit="20" value="30"/>
-		<data unit="25" value="10"/>
-		<data unit="30" value="5"/>
-	</dataset>
-</JSChart>
     <!-- github calendar css -->
     <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"/>
     <!-- github acitivity css -->
@@ -52,6 +35,23 @@
 </head> 
 
 <body>
+	   <script type="text/javascript" src="js/jscharts.js"></script>
+	    <div id="chartcontainer">This is just a replacement in case Javascript is not available or used for SEO purposes</div>
+	       <script type="text/javascript">
+	var myChart = new JSChart('chartcontainer', 'bar');
+	myChart.setDataXML('data.xml');
+	myChart.draw();
+	<?xml version="1.0"?>
+<JSChart>
+	<dataset type="line">
+		<data unit="10" value="20"/>
+		<data unit="15" value="10"/>
+		<data unit="20" value="30"/>
+		<data unit="25" value="10"/>
+		<data unit="30" value="5"/>
+	</dataset>
+</script>
+
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container">                       
